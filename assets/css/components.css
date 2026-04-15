@@ -709,3 +709,23 @@ section{
   letter-spacing:-.02em;
   margin-top:-6px;
 }
+
+/* ===== Hero Title Pattern ===== */
+
+.hero-title{
+  font-size:var(--title);
+  line-height:.92;
+  margin:.16em 0 .18em;
+  letter-spacing:-.05em;
+  text-wrap:balance;
+  font-weight:800;
+}
+
+.hero-title span{
+  display:block;
+  color:rgba(244,241,234,.78);
+  font-weight:400;
+  line-height:.9;
+  letter-spacing:-.02em;
+  margin-top:-6px;
+}
