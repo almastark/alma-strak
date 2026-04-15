@@ -101,6 +101,8 @@
   letter-spacing:.16em;
   font-size:.72rem;
   color:var(--muted);
+  line-height:1;
+  font-weight:400;
 }
 
 .eyebrow::before{
@@ -108,6 +110,7 @@
   width:7px;
   height:7px;
   background:var(--accent);
+  flex:0 0 7px;
 }
 
 .hero-grid{
