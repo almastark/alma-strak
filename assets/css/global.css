@@ -22,7 +22,6 @@
   --shadow:0 20px 60px rgba(0,0,0,.35);
 }
 
-*{box-sizing:border-box}
 
 html{scroll-behavior:smooth}
 
@@ -58,4 +57,42 @@ img{max-width:100%;display:block}
 .wrap{
   width:min(calc(100% - 32px), var(--max));
   margin:0 auto;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+
+button,
+input,
+textarea,
+select{
+  font:inherit;
+}
+
+main{
+  width:100%;
+}
+
+.site-header,
+.site-footer{
+  width:100%;
+}
+
+p{
+  margin:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+  line-height:1.05;
+  letter-spacing:-0.04em;
+}
+
+ul,ol{
+  margin:0;
+  padding:0;
+  list-style:none;
 }
