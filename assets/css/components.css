@@ -509,3 +509,39 @@ section{
   margin:0;
   color:var(--muted);
 }
+
+.contact-card{
+  border:1px solid var(--line);
+  padding:24px;
+  background:
+    linear-gradient(135deg, rgba(230,86,82,.12), rgba(155,184,255,.08)),
+    linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.contact-card h2{
+  margin:0 0 10px;
+  font-size:clamp(2rem,4vw,3.2rem);
+  line-height:.96;
+  letter-spacing:-.05em;
+}
+
+.contact-card p{
+  margin:0;
+  color:var(--muted);
+}
+
+.contact-list{
+  display:grid;
+  gap:12px;
+  align-content:start;
+}
+
+.contact-list a,
+.contact-list div{
+  border-top:1px solid rgba(255,255,255,.10);
+  padding-top:12px;
+  font-size:1rem;
+  color:var(--text);
+}
