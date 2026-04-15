@@ -713,19 +713,31 @@ section{
 /* ===== Hero Title Pattern ===== */
 
 .hero-title{
-  font-size:var(--title);
-  line-height:.92;
-  margin:.16em 0 .18em;
-  letter-spacing:-.05em;
-  text-wrap:balance;
-  font-weight:800;
+  font-size: var(--title);
+  line-height: .92;
+  margin: .16em 0 .18em;
+  letter-spacing: -.05em;
+  text-wrap: balance;
+  font-weight: 800;
 }
 
 .hero-title span{
-  display:block;
-  color:rgba(244,241,234,.78);
-  font-weight:400;
-  line-height:.9;
-  letter-spacing:-.02em;
-  margin-top:-6px;
+  display: block;
+  color: rgba(244,241,234,.78);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.02em;
+  margin-top: -6px;
+}
+
+.hero-title--case{
+  font-size: clamp(4.2rem, 6.2vw, 6.4rem);
+  max-width: 9.8ch;
+}
+
+@media (max-width: 760px){
+  .hero-title--case{
+    font-size: clamp(2.9rem, 13vw, 4.4rem);
+    max-width: 8.5ch;
+  }
 }
