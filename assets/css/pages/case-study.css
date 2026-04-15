@@ -23,12 +23,7 @@
 }
 
 .case-hero__title{
-  font-size: var(--title);
-  line-height: .92;
-  margin: .16em 0 .18em;
-  letter-spacing: -.05em;
-  font-weight: 800;
-  max-width: 7.2ch;
+  margin: 0;
 }
 
 .case-hero__title span{
