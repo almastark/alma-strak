@@ -666,6 +666,8 @@ section{
   letter-spacing:.16em;
   font-size:.72rem;
   color:var(--muted);
+  line-height:1;
+  font-weight:400;
 }
 
 .eyebrow-box::before{
