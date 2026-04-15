@@ -32,12 +32,9 @@
   background: rgba(255,255,255,.02);
 }
 
-.case-hero__eyebrow::before{
-  content: "";
-  width: 8px;
-  height: 8px;
-  flex: 0 0 8px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+.case-hero__eyebrow{
+  margin: 0 0 22px;
+  align-self: flex-start;
 }
 
 .case-hero__title{
