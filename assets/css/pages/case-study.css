@@ -1,1 +1,80 @@
+.case-hero{
+  padding-block: var(--space-xl);
+}
 
+.case-hero__content{
+  width: min(calc(100% - 32px), var(--max));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+/* LEFT */
+
+.case-hero__left{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+}
+
+.case-hero__eyebrow{
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-hero__title{
+  font-size: var(--display);
+  font-weight: 800;
+}
+
+.case-hero__title span{
+  display: block;
+}
+
+.case-hero__intro{
+  max-width: 520px;
+  font-size: var(--body);
+  color: var(--muted);
+}
+
+/* FACT CARDS */
+
+.case-hero__facts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space);
+  margin-top: var(--space);
+}
+
+.fact-card{
+  padding: var(--space);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.fact-card__label{
+  font-size: 0.8rem;
+  color: var(--soft);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.fact-card__text{
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+/* RIGHT IMAGE */
+
+.case-hero__right img{
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
