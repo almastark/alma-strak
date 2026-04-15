@@ -656,25 +656,24 @@ section{
 }
 
 .eyebrow-box{
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 12px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,.02);
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  font-size: .72rem;
-  color: var(--muted);
-  line-height: 1;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 12px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.02);
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.72rem;
+  color:var(--muted);
 }
 
 .eyebrow-box::before{
   content:"";
-  width: 7px;
-  height: 7px;
-  background: var(--accent);
-  flex: 0 0 7px;
+  width:7px;
+  height:7px;
+  background:var(--accent);
+  flex:0 0 7px;
 }
 
 @media (max-width: 760px){
