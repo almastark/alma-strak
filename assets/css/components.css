@@ -1,1 +1,356 @@
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(10,10,12,.72);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
 
+.topbar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:16px 0;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  min-width:0;
+}
+
+.brand-mark{
+  width:14px;
+  height:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  box-shadow:0 0 0 1px rgba(255,255,255,.08);
+  flex:0 0 auto;
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.05;
+}
+
+.brand-text strong{
+  font-weight:800;
+  letter-spacing:.02em;
+  font-size:.98rem;
+}
+
+.brand-text span{
+  font-size:.72rem;
+  color:var(--soft);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  margin-top:5px;
+}
+
+.nav{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+.nav a{
+  font-size:.82rem;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  position:relative;
+  transition:color .2s ease;
+}
+
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:2px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  transition:width .25s ease;
+}
+
+.nav a:hover{
+  color:var(--text);
+}
+
+.nav a:hover::after{
+  width:100%;
+}
+
+.hero{
+  padding:72px 0 34px;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 12px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.02);
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.72rem;
+  color:var(--muted);
+}
+
+.eyebrow::before{
+  content:"";
+  width:7px;
+  height:7px;
+  background:var(--accent);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:34px;
+  align-items:end;
+  margin-top:22px;
+}
+
+.hero-copy h1{
+  font-size:var(--title);
+  line-height:.92;
+  margin:.16em 0 .18em;
+  letter-spacing:-.05em;
+  text-wrap:balance;
+}
+
+.hero-copy h1 span{
+  color:rgba(244,241,234,.78);
+  display:block;
+  font-weight:400;
+  line-height:.9;
+  letter-spacing:-.02em;
+  margin-top:-6px;
+}
+
+.hero-copy p{
+  max-width:760px;
+  margin:0;
+  font-size:clamp(1.05rem,1.5vw,1.22rem);
+  color:var(--muted);
+}
+
+.hero-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 18px;
+  border:1px solid var(--line-strong);
+  background:transparent;
+  color:var(--text);
+  font-weight:600;
+  transition:transform .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  border-color:rgba(255,255,255,.38);
+}
+
+.btn--primary{
+  background:var(--text);
+  color:#0a0a0c;
+  border-color:var(--text);
+}
+
+.hero-panel{
+  border:1px solid var(--line);
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+  min-height:520px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.portrait-slot{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg, rgba(11,11,13,.08), rgba(11,11,13,.52)),
+    url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  filter:grayscale(100%);
+  transform:scale(1.03);
+}
+
+.hero-panel::before{
+  content:"Replace with your own portrait or editorial image";
+  position:absolute;
+  right:16px;
+  bottom:14px;
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(244,241,234,.72);
+  padding:8px 10px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(0,0,0,.24);
+}
+
+section{
+  padding:40px 0;
+}
+
+.section-head{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:20px;
+  align-items:end;
+  margin-bottom:28px;
+  padding-bottom:18px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.section-top{
+  font-size:.78rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--soft);
+  margin-bottom:10px;
+}
+
+.section-head h2{
+  margin:0;
+  font-size:var(--h2);
+  line-height:1;
+  letter-spacing:-.04em;
+  text-wrap:balance;
+}
+
+.section-head p{
+  margin:0;
+  color:var(--muted);
+  max-width:720px;
+  font-size:1rem;
+}
+
+.value-card,
+.chart-card{
+  border:1px solid var(--line);
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.value-card{
+  padding:24px;
+}
+
+.value-list{
+  display:grid;
+  gap:14px;
+  margin-top:12px;
+}
+
+.value-item{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:14px;
+  padding:14px 0;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.value-item:first-child{
+  border-top:none;
+  padding-top:0;
+}
+
+.value-item .num{
+  font-size:1rem;
+  color:var(--soft);
+  font-weight:700;
+  letter-spacing:.06em;
+}
+
+.value-item h3{
+  margin:0 0 6px;
+  font-size:1.1rem;
+  line-height:1.15;
+}
+
+.value-item p{
+  margin:0;
+  color:var(--muted);
+  font-size:.96rem;
+}
+
+.chart-card{
+  padding:24px;
+}
+
+.chart-title{
+  display:grid;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.chart-title h3{
+  margin:0;
+  font-size:1.22rem;
+}
+
+.chart-title p{
+  margin:0;
+  color:var(--muted);
+  font-size:.98rem;
+  max-width:none;
+  width:100%;
+  line-height:1.7;
+}
+
+.bars{
+  display:grid;
+  gap:18px;
+  margin-top:18px;
+}
+
+.bar-row{
+  display:grid;
+  grid-template-columns:140px 1fr;
+  gap:16px;
+  align-items:center;
+}
+
+.bar-row span{
+  font-size:.93rem;
+  color:var(--muted);
+}
+
+.bar-track{
+  height:18px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.03);
+  position:relative;
+}
+
+.bar-fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+}
+
+.bar-fill.secondary{
+  background:linear-gradient(90deg,var(--accent-3),#d8e2ff);
+}
+
+.bar-fill.tertiary{
+  background:linear-gradient(90deg,#84fab0,#8fd3f4);
+}
