@@ -373,6 +373,8 @@ section{
   background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
   overflow:hidden;
   box-shadow:var(--shadow);
+  text-decoration:none;
+  color:inherit;
 }
 
 .case-card:hover{
