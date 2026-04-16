@@ -4,7 +4,7 @@
 
 .case-hero__content{
   width: min(calc(100% - 32px), var(--max));
-  margin: 0 auto;
+  margin: 22px auto 0;
   display: grid;
   grid-template-columns: 1.2fr .8fr;
   gap: 34px;
