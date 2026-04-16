@@ -37,3 +37,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// PAGE FADE IN
+
+window.addEventListener("load", () => {
+  document.body.classList.add("page-loaded");
+});
+
+// PAGE FADE OUT
+document.querySelectorAll("a[href]").forEach(link => {
+  link.addEventListener("click", e => {
+    const url = link.getAttribute("href");
+
+    // فقط لینک‌های داخلی
+    if (url && !url.startsWith("#") && !url.startsWith("http")) {
+      e.preventDefault();
+
+      document.body.classList.remove("page-loaded");
+
+      setTimeout(() => {
+        window.location.href = url;
+      }, 300);
+    }
+  });
+});
