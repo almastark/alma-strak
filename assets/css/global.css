@@ -96,3 +96,12 @@ ul,ol{
   padding:0;
   list-style:none;
 }
+
+body{
+  opacity:0;
+  transition:opacity .4s ease;
+}
+
+body.page-loaded{
+  opacity:1;
+}
