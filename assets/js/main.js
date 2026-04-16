@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* ===== Home header ===== */
+  // HOME HEADER
   const topbarInner = document.querySelector(".topbar-inner");
   const homeToggle = document.querySelector(".nav-toggle");
   const homeNav = document.querySelector(".nav");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ===== Inner pages header ===== */
+  // INNER PAGES HEADER
   const siteNav = document.querySelector(".site-nav");
   const innerToggle = document.querySelector(".site-nav__toggle");
   const innerLinks = document.querySelector(".site-nav__links");
