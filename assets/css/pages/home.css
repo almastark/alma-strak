@@ -5,7 +5,9 @@
   align-items:end;
   margin-top:22px;
 }
-
+.hero-copy{
+  max-width: 520px;
+}
 /* Eyebrow spacing fix */
 
 .hero > .eyebrow{
