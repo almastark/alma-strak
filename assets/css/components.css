@@ -694,7 +694,7 @@ section{
 
 .hero-title{
   font-size:var(--title);
-  line-height:.92;
+  line-height:1.05;
   margin:.16em 0 .18em;
   letter-spacing:-.05em;
   text-wrap:balance;
