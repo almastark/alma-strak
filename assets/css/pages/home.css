@@ -13,6 +13,12 @@
   align-self:flex-start;
 }
 
+.hero-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
 .section-head{
   display:grid;
   grid-template-columns:.9fr 1.1fr;
