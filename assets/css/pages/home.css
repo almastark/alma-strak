@@ -2,15 +2,16 @@
   display:grid;
   grid-template-columns:1.2fr .8fr;
   gap:34px;
-  align-items:end;
+  align-items:start;
   margin-top:22px;
 }
 
-/* Eyebrow spacing fix */
-
 .hero > .eyebrow{
-  margin:0 0 22px;
-  align-self:flex-start;
+  margin: 0 0 22px;
+}
+
+.hero .hero-title{
+  margin: 0 0 .18em;
 }
 
 .hero-copy{
