@@ -38,40 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// PAGE FADE IN
 
-document.addEventListener("DOMContentLoaded", () => {
-  requestAnimationFrame(() => {
-    document.body.classList.add("page-loaded");
-  });
-});
-
-// PAGE FADE OUT
-document.querySelectorAll('a[href]').forEach(link => {
-  link.addEventListener('click', e => {
-    const url = link.getAttribute('href');
-
-    if (
-      !url ||
-      url.startsWith('#') ||
-      url.startsWith('http') ||
-      link.hasAttribute('target') ||
-      e.metaKey ||
-      e.ctrlKey ||
-      e.shiftKey ||
-      e.altKey
-    ) {
-      return;
-    }
-
-    e.preventDefault();
-    document.body.classList.remove('page-loaded');
-
-    setTimeout(() => {
-      window.location.href = url;
-    }, 180);
-  });
-});
 
 // SCROLL REVEAL
 
