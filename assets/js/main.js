@@ -40,25 +40,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // PAGE FADE IN
 
-window.addEventListener("load", () => {
-  document.body.classList.add("page-loaded");
+document.addEventListener("DOMContentLoaded", () => {
+  requestAnimationFrame(() => {
+    document.body.classList.add("page-loaded");
+  });
 });
 
 // PAGE FADE OUT
-document.querySelectorAll("a[href]").forEach(link => {
-  link.addEventListener("click", e => {
-    const url = link.getAttribute("href");
+document.querySelectorAll('a[href]').forEach(link => {
+  link.addEventListener('click', e => {
+    const url = link.getAttribute('href');
 
-    // فقط لینک‌های داخلی
-    if (url && !url.startsWith("#") && !url.startsWith("http")) {
-      e.preventDefault();
-
-      document.body.classList.remove("page-loaded");
-
-      setTimeout(() => {
-        window.location.href = url;
-      }, 300);
+    if (
+      !url ||
+      url.startsWith('#') ||
+      url.startsWith('http') ||
+      link.hasAttribute('target') ||
+      e.metaKey ||
+      e.ctrlKey ||
+      e.shiftKey ||
+      e.altKey
+    ) {
+      return;
     }
+
+    e.preventDefault();
+    document.body.classList.remove('page-loaded');
+
+    setTimeout(() => {
+      window.location.href = url;
+    }, 180);
   });
 });
 
