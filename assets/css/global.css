@@ -99,7 +99,7 @@ ul,ol{
 
 body{
   opacity:0;
-  transition:opacity .4s ease;
+  transition:opacity .22s ease;
 }
 
 body.page-loaded{
