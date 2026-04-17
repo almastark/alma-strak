@@ -276,8 +276,8 @@
 
 .case-insight-split__title{
   margin: 10px 0 20px;
-  color: var(--text); /* همون سفید سیستم */
-  max-width: 16ch;
+  color: var(--text);
+  max-width: 900px;
 }
 
 .case-insight-split__text{
