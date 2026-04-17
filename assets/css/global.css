@@ -97,15 +97,6 @@ ul,ol{
   list-style:none;
 }
 
-body{
-  opacity:0;
-  transition:opacity .22s ease;
-}
-
-body.page-loaded{
-  opacity:1;
-}
-
 /* ===== Scroll Reveal ===== */
 
 .reveal{
