@@ -285,10 +285,12 @@
   color: var(--muted);
 }
 
-/* ===== Responsive ===== */
-
 @media (max-width: 760px){
   .case-insight-split{
     padding: 40px 0 30px;
+  }
+
+  .case-insight-split__title{
+    max-width: 100%;
   }
 }
