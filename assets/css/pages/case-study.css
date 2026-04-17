@@ -34,14 +34,14 @@
 .case-hero__intro{
   max-width: 760px;
   margin: 0;
-  font-size: clamp(1.05rem,1.5vw,1.22rem);
+  font-size: clamp(1.05rem, 1.5vw, 1.22rem);
   color: var(--muted);
   line-height: 1.6;
 }
 
 .case-hero__facts{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   width: 100%;
   margin-top: 34px;
@@ -90,44 +90,7 @@
   display: block;
 }
 
-@media (max-width: 1100px){
-  .case-hero__content{
-    grid-template-columns: 1fr;
-    align-items: start;
-  }
-
-  .case-hero__right{
-    min-height: 420px;
-    height: auto;
-  }
-
-  .case-hero__title{
-    max-width: 8ch;
-  }
-}
-
-@media (max-width: 760px){
-  .case-hero{
-    padding: 42px 0 24px;
-  }
-
-  .case-hero__content{
-    gap: 24px;
-  }
-
-  .case-hero__facts{
-    grid-template-columns: 1fr;
-  }
-
-  .fact-card{
-    min-height: auto;
-  }
-
-  .case-hero__right{
-    min-height: 320px;
-    height: auto;
-  }
-}
+/* ===== Overview ===== */
 
 .case-overview{
   padding: 44px 0 40px;
@@ -165,18 +128,44 @@
 
 .case-overview__grid{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 18px;
   align-items: stretch;
 }
 
+.overview-visual{
+  grid-column: 1 / -1;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.overview-visual__placeholder{
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  color: var(--soft);
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(11,11,13,.12), rgba(11,11,13,.35)),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,.025),
+      rgba(255,255,255,.025) 12px,
+      rgba(255,255,255,.01) 12px,
+      rgba(255,255,255,.01) 24px
+    );
+}
+
 .overview-card{
   border: 1px solid var(--line);
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,.03),
-    rgba(255,255,255,.015)
-  );
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
   overflow: hidden;
   box-shadow: var(--shadow);
   padding: 24px;
@@ -198,52 +187,27 @@
   line-height: 1.7;
 }
 
-.overview-visual{
-  border: 1px solid var(--line);
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,.03),
-    rgba(255,255,255,.015)
-  );
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  min-height: 100%;
-}
-
-.overview-visual__placeholder{
-  min-height: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  color: var(--soft);
-  font-size: .78rem;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  text-align: center;
-  background:
-    linear-gradient(180deg, rgba(11,11,13,.12), rgba(11,11,13,.35)),
-    repeating-linear-gradient(
-      45deg,
-      rgba(255,255,255,.025),
-      rgba(255,255,255,.025) 12px,
-      rgba(255,255,255,.01) 12px,
-      rgba(255,255,255,.01) 24px
-    );
-}
+/* ===== Responsive ===== */
 
 @media (max-width: 1100px){
-  .case-overview__head{
+  .case-hero__content{
     grid-template-columns: 1fr;
     align-items: start;
   }
 
-  .case-overview__grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
+  .case-hero__right{
+    min-height: 420px;
+    height: auto;
+  }
+
+  .case-hero__title{
+    max-width: 8ch;
+  }
+
+  .case-overview__head{
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
 
   .overview-visual__placeholder{
     min-height: 260px;
@@ -251,6 +215,27 @@
 }
 
 @media (max-width: 760px){
+  .case-hero{
+    padding: 42px 0 24px;
+  }
+
+  .case-hero__content{
+    gap: 24px;
+  }
+
+  .case-hero__facts{
+    grid-template-columns: 1fr;
+  }
+
+  .fact-card{
+    min-height: auto;
+  }
+
+  .case-hero__right{
+    min-height: 320px;
+    height: auto;
+  }
+
   .case-overview{
     padding: 28px 0 24px;
   }
@@ -265,7 +250,15 @@
     max-width: 14ch;
   }
 
+  .case-overview__grid{
+    grid-template-columns: 1fr;
+  }
+
   .overview-card{
     padding: 20px;
+  }
+
+  .overview-visual__placeholder{
+    min-height: 220px;
   }
 }
