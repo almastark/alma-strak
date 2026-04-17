@@ -274,26 +274,14 @@
   margin: 0 auto;
 }
 
-.case-insight-split__statement{
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin: 10px 0 24px;
+.case-insight-split__title{
+  margin: 10px 0 20px;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -.03em;
-}
-
-.is-muted{
-  color: var(--soft);
-  opacity: .5;
-}
-
-.is-strong{
-  background: linear-gradient(90deg, #e65652, #ffd166);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff; /* سفید خالص */
+  max-width: 16ch;
 }
 
 .case-insight-split__text{
@@ -303,14 +291,13 @@
   font-size: 1rem;
 }
 
-/* ===== Responsive ===== */
-
 @media (max-width: 760px){
   .case-insight-split{
     padding: 40px 0 30px;
   }
 
-  .case-insight-split__statement{
+  .case-insight-split__title{
     font-size: clamp(1.6rem, 6vw, 2.2rem);
   }
 }
+
