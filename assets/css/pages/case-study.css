@@ -240,8 +240,10 @@
   }
 
   .case-overview__grid{
-    grid-template-columns: 1fr;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
 
   .overview-visual__placeholder{
     min-height: 260px;
