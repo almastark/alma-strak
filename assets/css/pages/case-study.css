@@ -288,6 +288,10 @@
   color: var(--muted);
 }
 
+.case-insight-split__title span{
+  white-space: nowrap;
+}
+
 @media (max-width: 760px){
   .case-insight-split{
     padding: 40px 0 30px;
