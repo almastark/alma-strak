@@ -290,15 +290,10 @@
     padding: 40px 0 30px;
   }
 
-  .case-insight-split__title{
-    max-width: 100%;
-  }
-}
-
-.case-overview__title,
 .case-insight-split__title{
-  font-size: var(--display);
+  font-size: var(--h2);      /* همون هوم */
   line-height: 1.05;
   letter-spacing: -0.04em;
   font-weight: 700;
+  max-width: 20ch;          /* خیلی مهم برای فرم */
 }
