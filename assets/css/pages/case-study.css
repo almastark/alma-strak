@@ -295,8 +295,9 @@
   }
 }
 
+.case-overview__title,
 .case-insight-split__title{
-  font-size: var(--display);  /* هم‌سایز ÖVERBLICK */
+  font-size: var(--display);
   line-height: 1.05;
   letter-spacing: -0.04em;
   font-weight: 700;
