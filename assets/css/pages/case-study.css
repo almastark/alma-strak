@@ -291,9 +291,10 @@
   }
 
 .case-insight-split__title{
-  font-size: var(--h2);      /* همون هوم */
-  line-height: 1.05;
-  letter-spacing: -0.04em;
+  font-size: 40.95px;
+  line-height: 40.95px;
   font-weight: 700;
-  max-width: 20ch;          /* خیلی مهم برای فرم */
+  letter-spacing: -1.638px;
+  margin: 0;
+  max-width: 331px;
 }
