@@ -275,9 +275,12 @@
 }
 
 .case-insight-split__title{
-  margin: 10px 0 20px;
-  color: var(--text);
-  max-width: 900px;
+  font-size: 40.95px;
+  line-height: 40.95px;
+  font-weight: 700;
+  letter-spacing: -1.638px;
+  margin: 0;
+  max-width: 331px;
 }
 
 .case-insight-split__text{
@@ -290,11 +293,3 @@
     padding: 40px 0 30px;
   }
 
-.case-insight-split__title{
-  font-size: 40.95px;
-  line-height: 40.95px;
-  font-weight: 700;
-  letter-spacing: -1.638px;
-  margin: 0;
-  max-width: 331px;
-}
